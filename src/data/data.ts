@@ -1,6 +1,6 @@
 // src/data.ts
-import { User } from './types'
-import PlaceholderImage from './images/placeholder.jpg'
+import { User } from '../components/types'
+import PlaceholderImage from '../images/placeholder.jpg'
 
 export const sampleData: User[] = [
 	{
@@ -10,8 +10,8 @@ export const sampleData: User[] = [
 		email: 'john.doe@example.com',
 		friends: ['2', '3', '4'],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 	{
 		id: '2',
@@ -20,8 +20,8 @@ export const sampleData: User[] = [
 		email: 'jane.smith@example.com',
 		friends: ['1', '3'],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 	{
 		id: '3',
@@ -30,8 +30,8 @@ export const sampleData: User[] = [
 		email: 'alex.johnson@example.com',
 		friends: ['1', '2'],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 	{
 		id: '4',
@@ -40,8 +40,8 @@ export const sampleData: User[] = [
 		email: 'sarah.williams@example.com',
 		friends: ['1'],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 	{
 		id: '5',
@@ -50,8 +50,8 @@ export const sampleData: User[] = [
 		email: 'michael.brown@example.com',
 		friends: [],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 	{
 		id: '6',
@@ -60,8 +60,8 @@ export const sampleData: User[] = [
 		email: 'emily.davis@example.com',
 		friends: [],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 	{
 		id: '7',
@@ -70,7 +70,7 @@ export const sampleData: User[] = [
 		email: 'christopher.wilson@example.com',
 		friends: [],
 		image: PlaceholderImage,
-		friendNames: [], // Empty array for now, we'll populate it later
-		highestRankingFriend: 0, // Default value, we'll update it later
+		friendNames: [],
+		highestRankingFriend: 0,
 	},
 ]

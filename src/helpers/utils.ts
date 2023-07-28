@@ -1,5 +1,5 @@
 // src/utils.ts
-import { User } from './types'
+import { User } from '../components/types'
 
 export function formatUser(user: User, allUsers: User[]): User {
 	const friendNames = user.friends.map((friendId) => {

@@ -29,15 +29,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
-
-.user-card {
-  margin: 10px 0;
-  padding: 10px;
-  display: flex;
-  align-items: center;
 }
 
 .user-card-container {
@@ -47,13 +38,12 @@ body {
   max-width: 100%;  /* default for smaller screens */
   box-sizing: border-box;
   padding: 10px;
-  margin: 10px 0; /* adjusted margin to remove negative values */
+  margin: 10px 0;
 }
 
-.user-card-friendnames {
-  font-weight: bold;
-  margin-top: 10px;
-  margin-left: 10px;
+.user-card {
+  display: flex;
+  align-items: center;
 }
 
 .user-card img {
@@ -74,25 +64,25 @@ body {
 
 .user-header {
   display: flex;
-  margin: 5px;
   justify-content: space-between;
   font-weight: bold;
+  margin: 0 0 10px 0; /* Added margin to separate from the email. */
 }
 
 .user-info p {
-  margin: 5px;
+  margin: 5px 0;
 }
 
-.friend-names {
+.user-card-friendnames {
+  font-weight: bold;  
+}
+
+.friend-names, .highest-rank {
   font-style: italic;
 }
 
 .friend-names::before {
   content: 'Friends: ';
-}
-
-.highest-rank {
-  font-style: italic;
 }
 
 .highest-rank::before {
@@ -102,9 +92,8 @@ body {
 /* Media query for larger screens */
 @media (min-width: 901px) {
   .user-card-container {
-      flex-basis: 50%;
-      max-width: 50%;
-      margin-left: -20px;
-      margin-right: -20px;
+    flex-basis: 50%;
+    max-width: 50%;
+    margin: 10px -20px;
   }
 }

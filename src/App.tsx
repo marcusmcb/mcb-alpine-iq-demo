@@ -1,10 +1,10 @@
 // src/App.tsx
 import React, { useEffect, useState } from 'react'
-import { User } from './types'
-import UserComponent from './UserComponent'
-import { sampleData } from './data'
-import { formatUser } from './utils'
-import './styles.css'
+import { User } from './components/types'
+import UserComponent from './components/UserComponent'
+import { sampleData } from './data/data'
+import { formatUser } from './helpers/utils'
+import './styles/styles.css'
 
 const App: React.FC = () => {
 	const [users, setUsers] = useState<User[]>([])

@@ -1,4 +1,3 @@
-// src/types.ts
 export type User = {
   id: string;
   rank: number;
