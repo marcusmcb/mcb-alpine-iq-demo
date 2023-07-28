@@ -1,0 +1,110 @@
+body {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.search-input {
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.user-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.user-card {
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-card-container {
+  border-bottom: 3px solid #ccc;
+  border-radius: 5px;
+  flex-basis: 100%;  /* default for smaller screens */
+  max-width: 100%;  /* default for smaller screens */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0; /* adjusted margin to remove negative values */
+}
+
+.user-card-friendnames {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-card.selected {
+  border-color: #4e72b8;
+  box-shadow: 0 0 5px #4e72b8;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-header {
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.user-info p {
+  margin: 5px;
+}
+
+.friend-names {
+  font-style: italic;
+}
+
+.friend-names::before {
+  content: 'Friends: ';
+}
+
+.highest-rank {
+  font-style: italic;
+}
+
+.highest-rank::before {
+  content: 'Highest Ranking Friend ID: ';
+}
+
+/* Media query for larger screens */
+@media (min-width: 901px) {
+  .user-card-container {
+      flex-basis: 50%;
+      max-width: 50%;
+      margin-left: -20px;
+      margin-right: -20px;
+  }
+}
